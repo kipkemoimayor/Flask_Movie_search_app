@@ -20,6 +20,13 @@ html{
   background-color: #5168;
 
 } */
+.review{
+  background-color: #8573;
+
+}
+.review:hover{
+  background-color: #8574;
+}
 h3{
   color:#5687;
   text-transform: capitalize;

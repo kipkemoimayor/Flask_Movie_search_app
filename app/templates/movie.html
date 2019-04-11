@@ -25,14 +25,17 @@
   </div>
 
 </div>
-<div class="col-md-12">
-  <h1>Reviews</h1>
-  <hr>
-  {%if reviews%}
-    {{macro.displayReviews(reviews)}}
-  {%else%}
-    <h3 class="text-center">No reviews yet</h3>
-    <a class="rating btn btn-primary" href="/movie/review/new/{{movie.id}}">Write a new Review</a>
-    {%endif%}
+<div class="col-md-8">
+  <div class="review">
+    <h1>Reviews</h1>
+    <hr class="bg-primary">
+    {%if reviews%}
+      {{macro.displayReviews(reviews)}}
+    {%else%}
+      <h3 class="text-center">No reviews yet</h3>
+      <a class="rating btn btn-primary" href="/movie/review/new/{{movie.id}}">Write a new Review</a>
+      {%endif%}
+  </div>
+
 </div>
 {%endblock%}
