@@ -20,13 +20,18 @@ html{
   background-color: #5168;
 
 } */
-/* h1{
+h3{
+  color:#5687;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 5px black;
+}
+h1{
   color: #9878;
   font-weight: 400;;
   font-family: fantasy;
   padding: 30px;
   box-shadow: 3px 3px 15px black;
-} */
+}
 .col-md-3:hover{
   zoom:102%;
   transition:500ms;
