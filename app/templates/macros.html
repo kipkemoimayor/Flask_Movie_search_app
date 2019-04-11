@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+{% macro displayMovieList(movie_list)%}
+{% for movie in movie_list%}
+<div class="col-md-3">
+<a href="/movie/{{movie.id}}"  ><img src="{{movie.poster}}"  alt="{{movie.title}}" class="img-responsive"></a>
+  <li class="text-center group-item-list">
+  <a class="nav-link" href="/movie/{{movie.id}}">
+    {{movie.title|truncate(10)}}
+
+  </a></li>
+</div>
+{%endfor%}
+{%endmacro%}
+{% macro displayReviews(review_list)%}
+  {% for review in review_list%}
+  <div class="col-md-12 review-card">
+    <h2>{{review.title}}</h2>
+
+    <p>{{review.review | truncate(30)}}</p>
+
+  </div>
+  {%endfor%}
+{%endmacro%}
